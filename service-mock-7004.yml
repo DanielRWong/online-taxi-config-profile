@@ -1,1 +1,13 @@
-env: 7004
+spring:
+  profiles: service-mock-7004
+  application:
+    name: service-mock
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+server:
+  port: 7004
+env: service-mock-7004-ongit
