@@ -1,1 +1,6 @@
 env: service-mock-7003-ongit-2stupdate
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: health, info, refresh
